@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal; 
+
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(./first.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+
+
+}
+.nav{
+    width:350px;
+    height: auto;
+   
+    position:absolute;
+    top: 20%;
+    left:0;
+
+}
+.nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    
+    height: 90px;
+    margin: 5px 0;
+    float: left  ;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+
+}
+
+a.active, .nav a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.a{
+    width: 95%;
+}
+.b{
+    width: 85%;
+}
+.c{
+    width: 90%;
+}
+.home h3{
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+
+.about{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color:white;
+    font-family: verdana;
+    padding: 0 60px;
+}
+.content{
+    width: 930px;
+    min-height: 500px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+.home {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    margin-right: 500px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 70vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 8vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+  
+ 
